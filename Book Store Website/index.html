@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/Book-icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+</head>
+
+<body onscroll="nav()">
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <!-- <img src="image/Book-icon.png" alt=""> -->
+                <i class="fas fa-book"></i>
+                <h2>Bookly</h2>
+            </div>
+            <div class="Search">
+                <input type="text" class="inp" placeholder="Search Here..">
+                <i class="fas fa-search search-btn"></i>
+            </div>
+            <div class="Icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <button onclick="login()" style="border: none; background: #fff; color: #444;"><i
+                        class="fas fa-user"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="Navbar2" id="Navbar2">
+        <nav>
+            <div class="tab">
+                <a href="#">
+                    Home
+                </a>
+                <a href="#">
+                    Featured
+                </a>
+                <a href="#">
+                    Arrivals
+                </a>
+                <a href="#">
+                    Reviews
+                </a>
+                <a href="#">
+                    Blog
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="offer">
+        <div class="coupon">
+            <div class="container">
+                <h3>Company Logo</h3>
+            </div>
+            <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Avatar" style="width:100%;">
+            <div class="container" style="background-color:white">
+                <h2><b>20% OFF YOUR PURCHASE</b></h2>
+                <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur. Sea te minim soleat senserit, ex quo luptatum
+                    tacimates voluptatum, salutandi delicatissimi eam ea. In sed nullam laboramus appellantur, mei ei
+                    omnis dolorem mnesarchum.</p>
+            </div>
+            <div class="container">
+                <p>Use Promo Code: <span class="promo">BOH232</span></p>
+                <p class="expire">Expires: Jan 03, 2021</p>
+            </div>
+        </div>
+    </div>
+    <div class="Loginer">
+        <button onclick="login()">
+            <div class="Cross">
+                &#215;
+            </div>
+        </button>
+        <div class="Login">
+            <h2>Sign In</h2>
+            <form>
+                <h3>Username</h3>
+                <input type="text" placeholder="enter the username" class="inp">
+                <h3 style="top: 70px;">Password</h3>
+                <input type="text" style="top: 90px;" placeholder="enter the password" class="inp">
+                <input style=" position:relative;top:140px; left: -330px;" type="checkbox" placeholder="Remember Me">
+                <h4 style="top: 108px; display: inline-block; left: 40px;">Remember Me</h4>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="Home" id="Home">
+        <div class="Content">
+            <H1>Upto 70% Off</H1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur doloremque in nobis, numquam harum
+                animi</p>
+            <br>
+            <button class="btn">Shop Now</button>
+        </div>
+        <div class="Shelf">
+            <div class="btns">
+                <button class="btn btn2" onclick="slider1()">←</button>
+                <button class="btn1 btn" onclick="slider9()">→</button>
+            </div>
+            <div class="Bookss">
+                <div class="Books">
+                    <img class="imags" src="image/book-1.png" alt="">
+                    <img class="imags" src="image/book-2.png" alt="">
+                </div>
+            </div>
+            <img src="image/stand.png" alt="">
+        </div>
+    </div>
+
+    <div class="Services" id="Services">
+        <div class="boxes">
+            <div class="box">
+                <i class="fas fa-shipping-fast"></i>
+                <div class="Content">
+                    <h2>Free Shipping</h2>
+                    <p>Order Over 1000₹</p>
+                </div>
+            </div>
+            <div class="box" style=" position: relative; left: 150px;">
+                <i class="fas fa-lock"></i>
+                <div class="Content">
+                    <h2>Secure Payment</h2>
+                    <p>100% Secure Payment</p>
+                </div>
+            </div>
+            <div class="box" style=" position: relative; left: 250px;">
+                <i class="fas fa-redo-alt"></i>
+                <div class="Content">
+                    <h2>Easy Returns</h2>
+                    <p>14 days Return</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Featured" id="Featured">
+        <div class="Heading">
+            <hr>
+            <span>Featured Books</span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="swiper-wrapper" style="z-index:20;">
+            <div class="btns">
+                <button class="btn btn2" onclick="FeSlider2()"
+                    style="border: none; border-radius: 2000px; background: #27ae60; width: 30px; height: 30px; margin: 10px 0px;"
+                    onclick="slider1()">←</button>
+                <button class="btn1 btn" onclick="FeSlider()"
+                    style="border: none; border-radius: 2000px; background: #27ae60; width: 30px; height: 30px; margin: 10px 0px;"
+                    onclick="slider1()">→</button>
+            </div>
+            <div class="Boite">
+                <div class="icons">
+                    <i class="fas fa-heart">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-search">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-eye">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                </div>
+                <div class="image">
+                    <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/best-book-covers-july-2019/large/bbcjuly19verynice.jpg?1384968217"
+                        alt="">
+                </div>
+                <div class="Context">
+                    <h2>Book </h2>
+                    <span>249₹</span>
+                    <button class="btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="Boite">
+                <div class="icons">
+                    <i class="fas fa-heart">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-search">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-eye">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                </div>
+                <div class="image">
+                    <img src="https://pub-static.fotor.com/assets/projects/pages/7e174fc0-935d-11ea-90ab-81870a418e8a_859716c4-a334-4f2e-8b7b-6c7b81dbd481_thumb.jpg"
+                        alt="">
+                </div>
+                <div class="Context">
+                    <h2>Book </h2>
+                    <span>299₹</span>
+                    <button class="btn">Add To Cart</button>
+                </div>
+
+            </div>
+            <div class="Boite">
+                <div class="icons">
+                    <i class="fas fa-heart">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-search">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-eye">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                </div>
+                <div class="image">
+                    <img src="https://pub-static.fotor.com/assets/projects/pages/be8eaa00-93f6-11ea-8cb7-c9d5f134e0a7_3732df0c-5326-4516-8232-dbc452ba18c1_thumb.jpg"
+                        alt="">
+                </div>
+                <div class="Context">
+                    <h2>Book </h2>
+                    <span>299₹</span>
+                    <button class="btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="swiper-wrapper Swiper-Slider">
+            <div class="btns">
+                <button class="btn btn2" onclick="FeSlider2()"
+                    style="border: none; border-radius: 2000px; background: #27ae60; width: 30px; height: 30px; margin: 10px 0px;"
+                    onclick="slider1()">←</button>
+                <button class="btn1 btn" onclick="slider9()"
+                    style="border: none; border-radius: 2000px; background: #27ae60; width: 30px; height: 30px; margin: 10px 0px;"
+                    onclick="slider1()">→</button>
+            </div>
+            <div class="Boite">
+                <div class="icons">
+                    <i class="fas fa-heart">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-search">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-eye">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                </div>
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVk2U121dawCzLZo8vK2oUcSfj7JJ1__1c7nkc-jklP3YwoOStEqkX9EyjWSnCYxiOyNU&usqp=CAU"
+                        alt="">
+                </div>
+                <div class="Context">
+                    <h2>Book </h2>
+                    <span>249₹</span>
+                    <button class="btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="Boite">
+                <div class="icons">
+                    <i class="fas fa-heart">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-search">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-eye">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                </div>
+                <div class="image">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc.jpg?ts=1588152105"
+                        alt="">
+                </div>
+                <div class="Context">
+                    <h2>Book </h2>
+                    <span>299₹</span>
+                    <button class="btn">Add To Cart</button>
+                </div>
+
+            </div>
+            <div class="Boite">
+                <div class="icons">
+                    <i class="fas fa-heart">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-search">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <i class="fas fa-eye">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                </div>
+                <div class="image">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                </div>
+                <div class="Context">
+                    <h2>Book </h2>
+                    <span>299₹</span>
+                    <button class="btn">Add To Cart</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="newsletter">
+        <form class="form-1">
+            <h2>Subscribe For Latest Updates</h2>
+            <input type="text" class="inp" placeholder="enter your e-mail">
+            <button class="btn" onclick="Thank()">Submit</button>
+        </form>
+    </div>
+    <div class="Arivals">
+        <div class="Heading" style="margin-top: 0px;">
+            <hr>
+            <span>Fresh Arrivals</span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="Cajas">
+            <div class="Caja">
+                <div class="img"><img src="/image/book-4.png" alt=""></div>
+                <div class="content" style="padding-left: 2.1rem;">
+                    <H3>Fresh Arrivals</H3>
+                    <p style="display: inline-block;">349&#x20B9;</p>
+                    <p
+                        style="display: inline-block; padding-left: 20px; text-decoration: line-through; font-size: 15px;">
+                        699&#x20B9;</p>
+                    <br>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star-half-alt star"></i>
+                </div>
+            </div>
+            <div class="Caja">
+                <div class="img"><img src="/image/book-5.png" alt=""></div>
+                <div class="content" style="padding-left: 2.1rem;">
+                    <H3>Fresh Arrivals</H3>
+                    <p style="display: inline-block;">349&#x20B9;</p>
+                    <p
+                        style="display: inline-block; padding-left: 20px; text-decoration: line-through; font-size: 15px;">
+                        699&#x20B9;</p>
+                    <br>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star-half-alt star"></i>
+                </div>
+            </div>
+            <div class="Caja">
+                <div class="img"><img src="/image/book-1.png" alt=""></div>
+                <div class="content" style="padding-left: 2.1rem;">
+                    <H3>Fresh Arrivals</H3>
+                    <p style="display: inline-block;">349&#x20B9;</p>
+                    <p
+                        style="display: inline-block; padding-left: 20px; text-decoration: line-through; font-size: 15px;">
+                        699&#x20B9;</p>
+                    <br>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star-half-alt star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="Cajas" style="margin-top: 20px;">
+            <div class="Caja">
+                <div class="img"><img src="/image/book-7.png" alt=""></div>
+                <div class="content" style="padding-left: 2.1rem;">
+                    <H3>Fresh Arrivals</H3>
+                    <p style="display: inline-block;">349&#x20B9;</p>
+                    <p
+                        style="display: inline-block; padding-left: 20px; text-decoration: line-through; font-size: 15px;">
+                        699&#x20B9;</p>
+                    <br>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star-half-alt star"></i>
+                </div>
+            </div>
+            <div class="Caja">
+                <div class="img"><img src="/image/book-9.png" alt=""></div>
+                <div class="content" style="padding-left: 2.1rem;">
+                    <H3>Fresh Arrivals</H3>
+                    <p style="display: inline-block;">349&#x20B9;</p>
+                    <p
+                        style="display: inline-block; padding-left: 20px; text-decoration: line-through; font-size: 15px;">
+                        699&#x20B9;</p>
+                    <br>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star-half-alt star"></i>
+                </div>
+            </div>
+            <div class="Caja">
+                <div class="img"><img src="/image/book-8.png" alt=""></div>
+                <div class="content" style="padding-left: 2.1rem;">
+                    <H3>Fresh Arrivals</H3>
+                    <p style="display: inline-block;">349&#x20B9;</p>
+                    <p
+                        style="display: inline-block; padding-left: 20px; text-decoration: line-through; font-size: 15px;">
+                        699&#x20B9;</p>
+                    <br>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star-half-alt star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Deal">
+        <div class="Content">
+            <h2>Deal Of The Day</h2>
+            <br>
+            <h1>Upto 62% Off!</h1>
+            <br>
+            <span>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Unde Perspiciatis In <br> Atque Dolore
+                Tempora Quaerat At Fuga Dolorum Natus Velit.</span>
+            <button class="btn">Shop Now</button>
+        </div>
+        <div class="img1"><img src="./image/deal-img.jpg" alt=""></div>
+    </div>
+
+    <section class="Review" id="Review">
+        <div class="review">
+            <div class="Heading" style="margin-top: 200px;">
+                <hr>
+                <span>Client Reviews</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="reviews-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide box1">
+                        <img src="./image/pic-1.png" alt="">
+                        <h3>John Mual</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium minus beatae ullam
+                            doloribus autem tenetur suscipit?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box1">
+                        <img src="./image/pic-2.png" alt="">
+                        <h3>John Mual</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium minus beatae ullam
+                            doloribus autem tenetur suscipit?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box1">
+                        <img src="./image/pic-3.png" alt="">
+                        <h3>John Mual</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium minus beatae ullam
+                            doloribus autem tenetur suscipit?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box1">
+                        <img src="./image/pic-4.png" alt="">
+                        <h3>John Mual</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium minus beatae ullam
+                            doloribus autem tenetur suscipit?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box1">
+                        <img src="./image/pic-5.png" alt="">
+                        <h3>John Mual</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium minus beatae ullam
+                            doloribus autem tenetur suscipit?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box1">
+                        <img src="./image/pic-6.png" alt="">
+                        <h3>John Mual</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium minus beatae ullam
+                            doloribus autem tenetur suscipit?</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="Blog" id="Blog">
+        <div class="Heading" style="margin-top: 100px;">
+            <hr>
+            <span>Our Blog</span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="blog-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide Box-2">
+                    <div class="imagess">
+                        <img src="./image/blog-1.jpg" alt="">
+                    </div>
+                    <div class="Contentss">
+                        <h3>Blog Title Goes Here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quod?</p>
+                        <button class="btn" style="position: initial;">Read More</button>
+                    </div>
+                </div>
+                <div class="swiper-slide Box-2">
+                    <div class="imagess">
+                        <img src="./image/blog-2.jpg" alt="">
+                    </div>
+                    <div class="Contentss">
+                        <h3>Blog Title Goes Here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quod?</p>
+                        <button class="btn" style="position: initial;">Read More</button>
+                    </div>
+                </div>
+                <div class="swiper-slide Box-2">
+                    <div class="imagess">
+                        <img src="./image/blog-4.jpg" alt="">
+                    </div>
+                    <div class="Contentss">
+                        <h3>Blog Title Goes Here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quod?</p>
+                        <button class="btn" style="position: initial;">Read More</button>
+                    </div>
+                </div>
+                <div class="swiper-slide Box-2">
+                    <div class="imagess">
+                        <img src="./image/blog-3.jpg" alt="">
+                    </div>
+                    <div class="Contentss">
+                        <h3>Blog Title Goes Here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quod?</p>
+                        <button class="btn" style="position: initial;">Read More</button>
+                    </div>
+                </div>
+                <div class="swiper-slide Box-2">
+                    <div class="imagess">
+                        <img src="./image/blog-5.jpg" alt="">
+                    </div>
+                    <div class="Contentss">
+                        <h3>Blog Title Goes Here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quod?</p>
+                        <button class="btn" style="position: initial;">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Footer">
+        <footer>
+            <div class="Location b e">
+                <h2>Our Locations</h2>
+                <br>
+                <i class="fas fa-map-marker-alt"> <p>India</p></i><br><br>
+                <i class="fas fa-map-marker-alt"> <p>USA</p></i><br><br>
+                <i class="fas fa-map-marker-alt"> <p> Autralia</p></i><br><br>
+                <i class="fas fa-map-marker-alt"> <p>Japan</p></i><br><br>
+                <i class="fas fa-map-marker-alt"> <p>France</p></i><br><br>
+                <i class="fas fa-map-marker-alt"> <p>Spain</p></i><br><br>
+            </div>
+            <div class="Links b d">
+                <h2>Quick Links</h2>
+                <br>
+                <i class="fas fa-arrow-right"> <p>Home</p></i><br><br>
+                <i class="fas fa-arrow-right"> <p>Featured</p></i><br><br>
+                <i class="fas fa-arrow-right"> <p>Arrivals</p></i><br><br>
+                <i class="fas fa-arrow-right"> <p>Review</p></i><br><br>
+                <i class="fas fa-arrow-right"> <p>Blog</p></i><br><br>
+                <!-- <i class="fas fa-arrow-right"> <p>Spain</p></i><br><br> -->
+            </div>
+            <div class="ExLinks b c">
+                <h2>Quick Links</h2>
+                <br>
+                <i class="fas fa-arrow-right"> <p>Account Info</p></i><br><br>
+                <i class="fas fa-arrow-right"> <p>Ordered Items</p></i><br><br>
+                <i class="fas fa-arrow-right"> <p>Privacy Policy</p></i><br><br>
+                <i class="fas fa-arrow-right"> <p>Payment Method</p></i><br><br>
+                <i class="fas fa-arrow-right"> <p>Our Services</p></i><br><br>
+            </div>
+            <div class="Contact b a">
+                <h2>Contact Info</h2>
+                <br>
+                <i class="fas fa-phone"> <p>+91 9953944012</p></i><br><br>
+                <i class="fas fa-phone"> <p>+91 9312208125</p></i><br><br>
+                <i class="fas fa-envelope"> <p>gargatharv2010@gmail.com</p></i><br><br>
+                <i class="fas fa-envelope"> <p>shreja1612@gmail.com</p></i><br><br>
+            </div>
+            <div class="h3">
+            <hr>
+            <div class="v">
+                <div class="vv">
+            <h2>All Rights Devserves only <h1>Atharv Garg</h1></h2>
+        </div>
+        </div>
+        </div>
+        </footer>
+    </section>
+</body>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+    imgs = document.querySelectorAll('.Shelf .imags')
+    btn = document.querySelector(".Shelf .btns")
+    Login = document.querySelector(".Loginer")
+    Slider = document.querySelector('.Swiper-Slider')
+    var navbar = document.querySelector(".Navbar2")
+    var offer = document.querySelector(".offer")
+    console.log(imgs);
+
+    function Thank() {
+        alert("Thank You For Subscribing Us")
+    }
+
+    setInterval(() => {
+        Slider.style = "z-index:1111; transition:all 0.5s linear;"
+    }, 5000);
+    setInterval(() => {
+        Slider.style = "z-index:-222222; transition:all 0.5s linear;"
+    }, 10000);
+
+    function login() {
+        if (Login.style.left == "0px") {
+            Login.style.left = "100%"
+        }
+
+        else {
+            Login.style.left = "0px"
+        }
+
+    }
+
+    var swiper = new Swiper(".blog-slider", {
+        spaceBetween: 5,
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 9500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+    var swiper = new Swiper(".reviews-slider", {
+        spaceBetween: 10,
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 9500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+
+    function slider1() {
+        imgs[0].src = "image/book-2.png"
+        imgs[1].src = "image/book-3.png"
+        btn.innerHTML = `<button class="btn btn2" onclick="slider2()">←</button><button class="btn1 btn" onclick="slider9()">→</button>`
+
+    }
+    function slider2() {
+        imgs[0].src = "image/book-3.png"
+        imgs[1].src = "image/book-4.png"
+        btn.innerHTML = `<button class="btn btn2" onclick="slider3()">←</button><button class="btn1 btn" onclick="slider1()">→</button>`
+
+    }
+    function slider3() {
+        imgs[0].src = "image/book-4.png"
+        imgs[1].src = "image/book-5.png"
+        btn.innerHTML = `<button class="btn btn2" onclick="slider4()">←</button><button class="btn1 btn" onclick="slider2()">→</button>`
+
+    }
+    function slider4() {
+        imgs[0].src = "image/book-5.png"
+        imgs[1].src = "image/book-6.png"
+        btn.innerHTML = `<button class="btn btn2" onclick="slider5()">←</button><button class="btn1 btn" onclick="slider3()">→</button>`
+
+    }
+    function slider5() {
+        imgs[0].src = "image/book-6.png"
+        imgs[1].src = "image/book-7.png"
+        btn.innerHTML = `<button class="btn btn2" onclick="slider6()">←</button><button class="btn1 btn" onclick="slider4()">→</button>`
+
+    }
+    function slider6() {
+        imgs[0].src = "image/book-7.png"
+        imgs[1].src = "image/book-8.png"
+        btn.innerHTML = `<button class="btn btn2" onclick="slider7()">←</button><button class="btn1 btn" onclick="slider5()">→</button>`
+
+    }
+    function slider7() {
+        imgs[0].src = "image/book-8.png"
+        imgs[1].src = "image/book-9.png"
+        btn.innerHTML = `<button class="btn btn2" onclick="slider8()">←</button><button class="btn1 btn" onclick="slider6()">→</button>`
+
+    }
+    function slider8() {
+        imgs[0].src = "image/book-9.png"
+        imgs[1].src = "image/book-10.png"
+        btn.innerHTML = `<button class="btn btn2" onclick="slider9()">←</button><button class="btn1 btn" onclick="slider7()">→</button>`
+
+    }
+    function slider9() {
+        imgs[0].src = "image/book-10.png"
+        imgs[1].src = "image/book-1.png"
+        btn.innerHTML = `<button class="btn btn2" onclick="slider1()">←</button><button class="btn1 btn" onclick="slider8()">→</button>`
+
+    }
+    window.onscroll = () => {
+
+        // searchForm.classList.remove('active');
+
+        if (window.scrollY > 80) {
+            document.querySelector('.Navbar2').classList.add('bg');
+        } else {
+            document.querySelector('.Navbar2').classList.remove('bg');
+        }
+
+    }
+</script>
+
+</html>
